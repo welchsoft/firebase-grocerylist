@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+    <head>
+      <link rel="icon" href="images/its-lit.png">
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css"></link>
+    <title>groceryFIRE</title>
+  </head>
+  <body>
+    <div class="space-man-stan">
+      <!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">one</a></li>
+  <li><a href="#!">two</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">three</a></li>
+</ul>
+<nav>
+  <div class="nav-wrapper">
+    <a href="#!" class="brand-logo">USER  NAME</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="#!">logout</a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">My Lists<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+  </div>
+</nav>
+
+<div id="my-lists">
+</div>
+
+<input type="text" id="TitleTextBox" />
+<button id="btnSave">Save</button>
+
+<ul id="tasksList">
+</ul>
+
+
+
+    <div class="row">
+      <div id="orders" class="col s12">
+        </div>
+        </div>
+
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCk1CAIPXz4569O39MI2xnP_wTwYm9Trs8",
+        authDomain: "groceryfire-868ea.firebaseapp.com",
+        databaseURL: "https://groceryfire-868ea.firebaseio.com",
+        projectId: "groceryfire-868ea",
+        storageBucket: "groceryfire-868ea.appspot.com",
+        messagingSenderId: "451052794375"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="dom.js"></script>
+  </body>
+</html>
